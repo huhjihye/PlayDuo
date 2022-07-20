@@ -16,6 +16,7 @@
           color: $white !important;
         }
       }
+
       .nav {
         .nav-link {
           color: $white !important;
@@ -43,6 +44,7 @@
         color: $white !important;
         border: 1px solid $white !important;
       }
+
       &.active {
         background: $white !important;
         color: $h-color !important;
@@ -99,6 +101,7 @@
       .form-control {
         background-image: $dark-version-input-bg-image !important;
         background-size: 0 100%, 100% 100%;
+
         &:focus {
           background-size: 100% 100%, 100% 100%;
         }
@@ -174,6 +177,7 @@
       border-bottom: 1px solid $dark-version-border-color;
       color: $white;
     }
+
     .choices__list.choices__list--dropdown {
       background: $dark-version-card-bg-color;
       box-shadow: $dark-version-card-box-shadow;
@@ -188,11 +192,11 @@
 
 
   // Datatable changes
-  .dataTable-sorter::after{
+  .dataTable-sorter::after {
     border-bottom-color: $white;
   }
 
-  .dataTable-sorter::before{
+  .dataTable-sorter::before {
     border-top-color: $white;
   }
 
@@ -201,11 +205,11 @@
     stroke: $light;
   }
 
-  .ql-snow .ql-fill, .ql-snow .ql-stroke.ql-fill{
+  .ql-snow .ql-fill, .ql-snow .ql-stroke.ql-fill {
     fill: $light;
   }
 
-  .ql-toolbar.ql-snow .ql-picker-label{
+  .ql-toolbar.ql-snow .ql-picker-label {
     color: $light;
   }
 

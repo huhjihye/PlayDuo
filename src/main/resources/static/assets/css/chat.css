@@ -99,6 +99,7 @@
 .fab:not(:last-child):hover {
     box-shadow: 0 0 6px rgba(0, 0, 0, .16), 0 6px 12px rgba(0, 0, 0, .32);
 }
+
 /*Chatbox*/
 
 .chat {
@@ -129,7 +130,7 @@
 }
 
 .chat_header .span {
-    float:right;
+    float: right;
 }
 
 .chat_loader {
@@ -191,7 +192,7 @@
     float: left;
 }
 
-.chat_option.is-dropped>ul {
+.chat_option.is-dropped > ul {
     display: block;
 }
 
@@ -210,7 +211,7 @@
     box-shadow: none;
 }
 
-.chat_login a>i {
+.chat_login a > i {
     font-size: 1.6em;
     line-height: 35px;
 }
@@ -297,7 +298,7 @@
     margin: 5px;
 }
 
-.fab_field .fab>i {
+.fab_field .fab > i {
     font-size: 1.6em;
     line-height: 35px;
     color: #263238;
@@ -428,6 +429,7 @@ strong.chat_time {
     font-size: 8px;
     display: block;
 }
+
 /*Chatbox scrollbar*/
 
 ::-webkit-scrollbar {
@@ -443,6 +445,7 @@ strong.chat_time {
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.2);
 }
+
 /*Element state*/
 
 .is-active {
@@ -470,6 +473,7 @@ strong.chat_time {
     -o-animation: load 1s cubic-bezier(0, .99, 1, 0.6) infinite;
     animation: load 1s cubic-bezier(0, .99, 1, 0.6) infinite;
 }
+
 /*Animation*/
 
 @keyframes zoomIn {
@@ -512,6 +516,7 @@ strong.chat_time {
         opacity: 0;
     }
 }
+
 /* SMARTPHONES PORTRAIT */
 
 @media only screen and (min-width: 300px) {
@@ -519,36 +524,43 @@ strong.chat_time {
         width: 200px;
     }
 }
+
 /* SMARTPHONES LANDSCAPE */
 
 @media only screen and (min-width: 480px) {
     .chat {
         width: 300px;
     }
+
     .chat_field {
         width: 65%;
     }
 }
+
 /* TABLETS PORTRAIT */
 
 @media only screen and (min-width: 768px) {
     .chat {
         width: 300px;
     }
+
     .chat_field {
         width: 65%;
     }
 }
+
 /* TABLET LANDSCAPE / DESKTOP */
 
 @media only screen and (min-width: 1024px) {
     .chat {
         width: 400px;
     }
+
     .chat_field {
         width: 65%;
     }
 }
+
 /*Color Options*/
 
 .red .fab {
@@ -740,6 +752,7 @@ strong.chat_time {
     background: #607D8B;
     color: #eceff1;
 }
+
 /* Ripple */
 
 .ink {
@@ -752,6 +765,7 @@ strong.chat_time {
     webkit-transform: scale(0);
     transform: scale(0);
 }
+
 /*animation effect*/
 
 .ink.animate {

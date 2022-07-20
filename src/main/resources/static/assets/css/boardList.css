@@ -34,7 +34,7 @@ body {
     padding-left: 15px;
     padding-top: 28px;
     position: relative;
-    z-index:2;
+    z-index: 2;
     justify-content: space-between;
     align-items: flex-start;
 }
@@ -85,7 +85,7 @@ body {
 
 .title-main {
     position: relative;
-    z-index:2;
+    z-index: 2;
     margin-right: 0px;
     margin-left: 0px;
 }
@@ -152,7 +152,7 @@ body {
     margin-top: 8px;
 }
 
-.card-content{
+.card-content {
     margin-left: 29px;
 }
 

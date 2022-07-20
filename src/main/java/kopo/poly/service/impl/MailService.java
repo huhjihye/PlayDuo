@@ -29,7 +29,7 @@ public class MailService implements IMailService {
 
 
     @Override
-    public int doSendmail(MailDTO pDTO)  {
+    public int doSendmail(MailDTO pDTO) {
 
 
         int res = 1;

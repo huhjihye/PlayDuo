@@ -14,5 +14,5 @@ public interface IUserMapper {
 
     UserDTO user_idcheck(String parent_id) throws Exception;
 
-    UserDTO user_emailcheck(String parent_email)throws Exception;
+    UserDTO user_emailcheck(String parent_email) throws Exception;
 }

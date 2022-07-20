@@ -36,14 +36,15 @@
       background-size: $input-background-size;
       transition: $input-transition;
 
-  		&:not(:first-child) {
-  	    border-left: 0;
-  	    padding-left: 0;
-  		}
-  		&:not(:last-child) {
-  			border-right: 0;
-  			padding-right: 0;
-  		}
+      &:not(:first-child) {
+        border-left: 0;
+        padding-left: 0;
+      }
+
+      &:not(:last-child) {
+        border-right: 0;
+        padding-right: 0;
+      }
 
       & + .input-group-text {
         border-left: 0;
@@ -51,20 +52,20 @@
       }
 
       &,
-      &:focus{
+      &:focus {
         background-image: $input-background-image;
         border-radius: 0 !important;
       }
 
-      &:focus{
+      &:focus {
         background-size: $input-background-size-focus;
       }
 
-      &[disabled]{
+      &[disabled] {
         cursor: not-allowed;
         background-image: $input-background-image-disabled !important;
       }
-  	}
+    }
 
     .input-group-text {
       border-right: 0;
@@ -81,30 +82,33 @@
       .form-label {
         top: $form-label-top-focused;
       }
+
       label {
         color: $primary;
       }
-      &.is-valid{
-        label{
+
+      &.is-valid {
+        label {
           color: $success;
         }
 
-        .form-control{
+        .form-control {
           &,
-          &:focus{
+          &:focus {
             background-image: $input-background-image-valid;
             border-radius: 0 !important;
           }
         }
       }
-      &.is-invalid{
-        label{
+
+      &.is-invalid {
+        label {
           color: $danger;
         }
 
-        .form-control{
+        .form-control {
           &,
-          &:focus{
+          &:focus {
             background-image: $input-background-image-invalid;
             border-radius: 0 !important;
           }
@@ -112,20 +116,20 @@
       }
     }
 
-    &.is-valid{
-      .form-control{
+    &.is-valid {
+      .form-control {
         &,
-        &:focus{
+        &:focus {
           background-image: $input-background-image-valid;
           border-radius: 0 !important;
         }
       }
     }
 
-    &.is-invalid{
-      .form-control{
+    &.is-invalid {
+      .form-control {
         &,
-        &:focus{
+        &:focus {
           background-image: $input-background-image-invalid;
           border-radius: 0 !important;
         }
@@ -154,11 +158,11 @@
         padding: $input-padding-y-lg $input-padding-x-lg !important;
       }
 
-      &.form-control-sm{
+      &.form-control-sm {
         padding: $input-padding-y-sm $input-padding-x-sm !important;
       }
 
-      &[disabled]{
+      &[disabled] {
         cursor: not-allowed;
         border-style: dashed;
       }
@@ -237,6 +241,7 @@
         background-position: right $input-height-inner-quarter center;
         background-size: $input-height-inner-half $input-height-inner-half;
       }
+
       &.is-focused,
       &.is-filled {
         .form-label + .form-control {
@@ -244,6 +249,7 @@
           box-shadow: inset 1px 0 $success, inset -1px 0 $success, inset 0 -1px $success;
           border-top-color: transparent !important;
         }
+
         .form-label {
           color: $success;
 
@@ -263,6 +269,7 @@
         background-position: right $input-height-inner-quarter center;
         background-size: $input-height-inner-half $input-height-inner-half;
       }
+
       &.is-focused,
       &.is-filled {
         .form-label + .form-control {
@@ -270,6 +277,7 @@
           box-shadow: inset 1px 0 $danger, inset -1px 0 $danger, inset 0 -1px $danger;
           border-top-color: transparent !important;
         }
+
         .form-label {
           color: $danger;
 
@@ -286,15 +294,16 @@
   &.input-group-outline,
   &.input-group-dynamic,
   &.input-group-static {
-    &.input-group-sm{
+    &.input-group-sm {
       .form-label,
-      label{
+      label {
         font-size: $input-group-sm-font-size;
       }
     }
-    &.input-group-lg{
+
+    &.input-group-lg {
       .form-label,
-      label{
+      label {
         font-size: $input-group-lg-font-size;
       }
     }
@@ -304,6 +313,7 @@
     .form-control {
       width: 100%;
     }
+
     label {
       margin-left: 0;
       margin-bottom: 0;

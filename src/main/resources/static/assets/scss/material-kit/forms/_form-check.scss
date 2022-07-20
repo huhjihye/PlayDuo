@@ -15,6 +15,7 @@
 
   &[type="checkbox"] {
     background-image: none;
+
     &:after {
       transition: opacity $form-check-transition-time ease-in-out;
       font-family: "FontAwesome";
@@ -30,8 +31,9 @@
       opacity: 0;
     }
 
-    &:checked{
+    &:checked {
       background: $primary;
+
       &:after {
         opacity: 1;
       }
@@ -66,7 +68,7 @@
       opacity: 1;
     }
 
-    &:active{
+    &:active {
       box-shadow: $form-check-radio-after-shadow;
       border-radius: $border-radius-pill;
       transition: $form-check-radio-transition;
@@ -79,12 +81,12 @@
   cursor: pointer;
 }
 
-.form-check-label{
-  font-size:$font-size-sm;
+.form-check-label {
+  font-size: $font-size-sm;
   font-weight: $font-weight-normal;
 }
 
-.form-check-input{
+.form-check-input {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;

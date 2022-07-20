@@ -34,7 +34,7 @@ public class MailController {
 
         String title = " 반갑습니다.환영합니다"; //제목
         String contents = "( 인증번호: " + randomPin + ")";  //내용
-        log.info("randomPiN: "+randomPin);
+        log.info("randomPiN: " + randomPin);
 
 
         MailDTO pDTO = new MailDTO(); //

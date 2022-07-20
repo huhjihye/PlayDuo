@@ -4,30 +4,30 @@
     <insert id="InsertUserInfo" parameterType="UserDTO">
         INSERT INTO PARENT_INFO
         (PARENT_ID,
-         PARENT_EMAIL,
-         PARENT_PASSWORD,
-         PARENT_NAME,
-         PARENT_GENDER)
+        PARENT_EMAIL,
+        PARENT_PASSWORD,
+        PARENT_NAME,
+        PARENT_GENDER)
         VALUES (#{parent_id},
-                #{parent_email},
-                #{parent_password},
-                #{parent_name},
-                #{parent_gender})
+        #{parent_email},
+        #{parent_password},
+        #{parent_name},
+        #{parent_gender})
 
     </insert>
     <select id="selectUserInfo" parameterType="UserDTO" resultType="UserDTO">
         SELECT PARENT_ID
         FROM PARENT_INFO
         WHERE PARENT_ID = #{parent_id}
-          and PARENT_PASSWORD = #{parent_password}
+        and PARENT_PASSWORD = #{parent_password}
     </select>
 
 
-<select id="user_idcheck" parameterType="UserDTO" resultType="UserDTO">
-    SELECT PARENT_ID
-    FROM PARENT_INFO
-    WHERE PARENT_ID = #{parent_id} <!--dto변수를 넣을 땐 항상 #{ }사용해서 넣기 -->
-</select>
+    <select id="user_idcheck" parameterType="UserDTO" resultType="UserDTO">
+        SELECT PARENT_ID
+        FROM PARENT_INFO
+        WHERE PARENT_ID = #{parent_id} <!--dto변수를 넣을 땐 항상 #{ }사용해서 넣기 -->
+    </select>
 
     <select id="user_emailcheck" parameterType="UserDTO" resultType="UserDTO">
         SELECT PARENT_EMAIL

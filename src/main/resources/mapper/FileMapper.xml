@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTO Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kopo.poly.persistance.mapper.IFileMapper">
+    <insert id="fileUpload" parameterType="FileDTO" useGeneratedKeys="true" keyProperty="file_seq">
+        INSERT INTO FILE_INFO
+        (FILE_NAME, FILE_PATH, FILE_ORGNAME, FILE_EXIT, FILE_REG_ID, FILE_CHG_ID)
+        VALUES (#{file_name}, #{file_path}, #{file_orgname}, #{file_exit}, #{file_reg_id}, #{file_chg_id})
+    </insert>
+
+    <insert id="insertImgStudy" parameterType="ImgStudyDTO">
+        INSERT INTO IMG_STUDY
+            (FILE_SEQ, IMG_ANSWER, IMG_CONTENT)
+        VALUES (#{file_seq}, #{img_answer}, #{img_content})
+    </insert>
+</mapper>
