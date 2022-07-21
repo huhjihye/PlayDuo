@@ -45,14 +45,14 @@ public class UserController {
 
 
         String user_id = CmmUtil.nvl(request.getParameter("user_id")); //문자형 user_id 변수를 만들어 널값 함수를 사용해 user_id를 받는다.
-        String user_pwd = CmmUtil.nvl(request.getParameter("user_pwd"));
+        String user_pwd = CmmUtil.nvl(request.getParameter("user_pwd")); //문자형 user_pwd 변수를 만들어 널값 함수를 사용해 user_pwd를 받는다.
 
         //log.info 찍는 이유 : 에러났을 때 어디부분이 안찍히는지 확인하고 에러 구간 빨리 잡을 수 있음
         log.info("user_id" + user_id);  //console에 입력받은 값 노출
         log.info("user_pwd" + user_pwd);
 
-        UserDTO rDTO = new UserDTO(); //UserDTO 타입 rDTO 변수는 ???
-        rDTO.setParent_id(user_id);
+        UserDTO rDTO = new UserDTO(); //UserDTO 타입 rDTO 변수를 만들어 메모리에 올림
+        rDTO.setParent_id(user_id); //Parent_id에 user_id값을 넣고 rDTO에 넣는다
         rDTO.setParent_password(user_pwd);
 
         int res = userService.selectUserInfo(rDTO);

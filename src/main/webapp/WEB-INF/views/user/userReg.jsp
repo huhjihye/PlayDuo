@@ -135,7 +135,7 @@
         function checkfield() {
             if ($('#user_id').val().trim() === '') {
                 alert("아이디는 공백일 수 없습니다.");
-                $("#id_result").text.text('아이디는 공백일 수 없습니다');
+                $("#id_result").text('아이디는 공백일 수 없습니다');
                 return false;
             }
             if ($('#user_email').val().trim() === '') {

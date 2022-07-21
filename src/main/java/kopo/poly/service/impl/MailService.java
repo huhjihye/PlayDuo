@@ -22,9 +22,9 @@ import javax.mail.Transport;
 public class MailService implements IMailService {
 
 
-    final String host = "smtp.gmail.com";
-    final String user = "floramiss0700@gmail.com";
-    final String password = "fvfzrvayfawppktv";
+    final String host = "";
+    final String user = "";
+    final String password = "";//
     //final int port = 465;
 
 
