@@ -7,6 +7,7 @@ import kopo.poly.service.IS3UploadService;
 import kopo.poly.util.DateUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
@@ -24,6 +25,13 @@ public class UploadController{
 
     @Resource(name = "FileService")
     private IFileService fileService;
+
+    @GetMapping(value = "filesend/fileupload")
+    public String fileupload(){
+        log.info(this.getClass().getName()+"파일 업로드 페이지 시작!");
+
+        return "filesend/fileupload";
+    }
 
     @PostMapping(value = "/uploadS3")
     public String uploadS3(HttpServletRequest request, MultipartHttpServletRequest mft)throws Exception{

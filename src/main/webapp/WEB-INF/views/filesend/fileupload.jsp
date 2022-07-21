@@ -75,10 +75,7 @@
                             dataType: 'json',
                             cache: false,
                             success: function (res) {
-                                console.table(res);
-                                let url = res["moveUrl"] + "?msg=" + res["msg"] + "&url=" + res["url"];
-                                location.replace(url);
-                                console.log(url);
+                                console.log("success");
                             }, error: function (res) {
                                 console.log("fail : " + res);
                             }
@@ -117,49 +114,7 @@
             <div class="main_002">
 
                 <div class="main_003">
-                    <div class="main_004">
-                        <label>출발일</label>
-                        <input type="date" class="section_001" id="start_day" name="start_day">
 
-                    </div>
-                    <div class="main_004">
-                        <label>도착일</label>
-                        <input type="date" class="section_001" id="end_day" name="end_day">
-                        <span class="sp_002">
-                                <svg class="icon" width="10" height="10"></svg>
-                            </span>
-                    </div>
-                    <div class="main_004">
-                        <span>
-                                <label>지역</label>
-                                   <select class="section_001" name="location" id="big_city"
-                                           onchange="chanCity(value)" style="display: inline">
-                                       <option value="1" selected="">서울</option>
-                                       <option value="2">인천</option>
-                                       <option value="3">대전</option>
-                                       <option value="4">대구</option>
-                                       <option value="5">광주</option>
-                                       <option value="6">부산</option>
-                                       <option value="7">울산</option>
-                                       <option value="31">경기도</option>
-                                       <option value="33">충청북도</option>
-                                       <option value="34">충청남도</option>
-                                       <option value="35">경상북도</option>
-                                       <option value="36">경상남도</option>
-                                       <option value="37">전라북도</option>
-                                       <option value="38">전라남도</option>
-                                       <option value="39">제주도</option>
-                                   </select>
-                            </span>
-                    </div>
-                    <div class="main_004">
-                              <span>
-                                  <label class="ms-0">시군구</label>
-                                     <select class="section_001" name="smallcity" id="small_city" style="display: inline;">
-                                        <option value="" selected=""></option>
-                                    </select>
-                            </span>
-                    </div>
                     <div class="main_004" style="margin-left: 400px;">
                         <button type="button" class="btn_001"
                                 style="background-color: rgb(53,197,240); margin-right: 60px">
@@ -193,35 +148,17 @@
                                 <div class="write_001">
                                     <div class="write_002">
                                         <div class="title_001">
-                                            <span><h4>제목을 적어주세요:)</h4> <input type="text" class="title_002" name="title"
+                                            <span><h4>단어</h4> <input type="text" class="title_002" name="title"
                                                                               style="margin-top: 10px;"></span>
-                                            <span><select class="keyword_main"
-                                                          style="box-sizing : content-box; width:60px;" name="star">
-                                                <option value="" selected>평점</option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="3">3</option>
-                                                <option value="4">4</option>
-                                                <option value="5">5</option>
-                                            </select></span>
                                         </div>
-                                        <textarea class="detail_001" placeholder="사진에대해 설명해 주세요" rows="6"
+                                        <textarea class="detail_001" placeholder="설명을 적어주세요" rows="6"
                                                   style="overflow: hidden; overflow-wrap: break-word; height: 145px;"
                                                   name="board_content"></textarea>
-                                        <div class="keyword_001">
-                                            <div class="keyword_002" style="display: inline-block;">
-                                                <input class="keyword_main" placeholder="#태그" value
-                                                       style="box-sizing : content-box; width:60px;" id="keyMain"
-                                                       onkeyup="enterkey();" name="hashTag">
-                                            </div>
-                                        </div>
+
                                     </div>
                                 </div>
                             </div>
-                            <span>
-                            <label>장소명</label>
-                                <input type="text" style="border:none; display: inline; margin-left: 10px;" name="addr">
-                            </span>
+
                         </div>
                     </li>
                 </ol>

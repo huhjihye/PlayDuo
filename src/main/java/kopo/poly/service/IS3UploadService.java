@@ -1,7 +1,6 @@
 package kopo.poly.service;
 
-import kopo.poly.dto.FileDetailDTO;
-import kopo.poly.dto.FileInfoDTO;
+
 import org.springframework.web.multipart.MultipartFile;
 
 public interface IS3UploadService {
