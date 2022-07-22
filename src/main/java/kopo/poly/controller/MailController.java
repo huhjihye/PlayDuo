@@ -37,7 +37,7 @@ public class MailController {
         log.info("randomPiN: " + randomPin);
 
 
-        MailDTO pDTO = new MailDTO(); //
+        MailDTO pDTO = new MailDTO(); //메일
         pDTO.setToMail(user_email); //이메일 주소
         pDTO.setTitle(title);  //제목
         pDTO.setContents(contents);  // 내용
