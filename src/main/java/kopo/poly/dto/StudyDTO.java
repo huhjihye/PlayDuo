@@ -11,4 +11,14 @@ public class StudyDTO {
     private String sentence_study_seq;
     private String sentence_content;
 
+    //word study
+    //자음 모음 쪼개기
+    private String cha;
+    private String joong;
+    private String jong;
+    // DB 조회 단어
+    private String word_seq;
+    private String word_content;
+
+
 }
