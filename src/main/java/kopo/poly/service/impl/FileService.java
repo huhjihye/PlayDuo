@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 @Slf4j
 public class FileService implements IFileService {
 
+    // 파일 업로드 
     private final IFileMapper fileMapper;
 
     @Autowired

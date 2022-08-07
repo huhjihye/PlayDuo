@@ -39,6 +39,10 @@ public class UserController {
         return "user/login";
     }
 
+    @GetMapping(value="test")
+    public String faceidlogin(){
+        return "user/test";
+    }
     @PostMapping(value = "loginProc") //보통 실행하는 부분은 proc라고 적어줘서 구분을 지어준다. 로그인 실행페이지 요청을 받는다.
     public String login(HttpServletRequest request, Model model) throws Exception { //request : 받는거 / model : 보내는거
         log.info(this.getClass().getName() + ".login start!!");

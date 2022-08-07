@@ -12,7 +12,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class UrlUtil {
-
+    //REST API용 url util
     private final Logger log = LoggerFactory.getLogger(this.getClass());
 
     /**

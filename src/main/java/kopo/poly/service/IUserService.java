@@ -7,7 +7,6 @@ public interface IUserService {
 
     int InsertUserInfo(UserDTO pDTO) throws Exception;
 
-
     int selectUserInfo(UserDTO rDTO) throws Exception;
 
     int user_idcheck(String parent_id) throws Exception;

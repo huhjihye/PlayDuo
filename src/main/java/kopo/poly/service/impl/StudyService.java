@@ -6,7 +6,6 @@ import kopo.poly.dto.StudyDTO;
 import kopo.poly.persistance.mapper.IStudyMapper;
 import kopo.poly.service.IStudyService;
 import kopo.poly.util.UrlUtil;
-import kopo.poly.util.WordStudyUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -20,7 +19,7 @@ import java.util.List;
 @Slf4j
 @Service("StudyService")
 public class StudyService implements IStudyService {
-
+    //싱글톤 객체 생성
     private final IStudyMapper studyMapper;
 
     @Autowired

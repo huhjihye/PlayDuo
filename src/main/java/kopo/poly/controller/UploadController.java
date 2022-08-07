@@ -20,6 +20,7 @@ import java.util.List;
 @Slf4j
 public class UploadController{
 
+    //이미지 업로드
     @Resource(name = "S3UploadService")
     private IS3UploadService s3UploadService;
 
@@ -72,9 +73,9 @@ public class UploadController{
             fDTO.setFile_name(saveFileName);
             fDTO.setFile_path(saveFilePath);
             fDTO.setFile_orgname(originalFileName);
-            fDTO.setExit(ext);
-            fDTO.setReg_id("flora");
-            fDTO.setChg_id("flora");
+            fDTO.setFile_exit(ext);
+            fDTO.setFile_reg_id("flora");
+            fDTO.setFile_chg_id("flora");
 
             file_res = fileService.fileUpload(fDTO);
 
