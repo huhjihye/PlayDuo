@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTO Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kopo.poly.persistance.mapper.IChildMapper">
+
+    <!--유아 정보 추가-->
+    <insert id="InsertChildInfo" parameterType="ChdDTO">
+        INSERT INTO CHILD_INFO
+        (CHILD_NAME,
+         CHILD_AGE,
+         CHILD_GENDER,
+         CHILD_CODE)
+        VALUES (#{child_name},
+                #{child_age},
+                #{child_gender},
+                #{child_code})
+    </insert>
+
+    <select id="chdMemberList" resultType="ChdDTO" parameterType="ChdDTO">
+        SELECT *
+FROM CHILD_INFO
+
+    </select>
+
+</mapper>
