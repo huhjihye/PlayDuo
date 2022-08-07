@@ -14,7 +14,7 @@ import java.util.List;
 public class ChildService implements IChildService {
     private final IChildMapper childMapper;
 
-    @Autowired
+    @Autowired//
     public ChildService(IChildMapper childMapper){ this.childMapper =childMapper;}
 
 

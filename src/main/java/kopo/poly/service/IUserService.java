@@ -12,7 +12,7 @@ public interface IUserService {
 
     int user_emailcheck(String parent_email)throws Exception;
 
-    //로그인 실행
+    //로그인 실행//
     int loginProc(UserDTO rDTO)throws Exception;
 
     int passwordChangeProc(UserDTO pDTO)throws Exception;
