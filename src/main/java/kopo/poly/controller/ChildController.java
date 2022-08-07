@@ -72,10 +72,10 @@ public class ChildController {
 
     }
 
-    //유아 회원목록 페이지를 보여줌
+    //유아 회원목록 페이지
     @GetMapping(value = "chdMember")
     public String chdMemberList( HttpServletRequest request, Model model) throws Exception {
-        log.info(this.getClass().getName()+"유아회원목록페이지 시작");
+        log.info(this.getClass().getName()+"유아 회원목록 페이지 시작");
 
 
         List<ChdDTO> rList = childService.chdMemberList();
@@ -85,7 +85,7 @@ public class ChildController {
         }
         model.addAttribute("rList", rList);
 
-        log.info(this.getClass().getName()+"유아회원목록 페이지 끝!");
+        log.info(this.getClass().getName()+"유아 회원목록 페이지 끝!");
 
         return "user/chdMember";
     }
