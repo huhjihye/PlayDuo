@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Slf4j
-@Service("NoticeService")
+@Service("NoticeService")//
 public class NoticeService implements INoticeService {
     private final INoticeMapper noticeMapper;
 

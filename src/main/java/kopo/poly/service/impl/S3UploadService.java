@@ -20,7 +20,7 @@ import java.util.Optional;
 @Slf4j
 @Service("S3UploadService")
 public class S3UploadService implements IS3UploadService {
-    //s3 이미지 업로드 시작!//
+    //s3 이미지 업로드 시작!////
     @Value("${cloud.aws.s3.bucket}")
     public String bucketName;
 

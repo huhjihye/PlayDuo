@@ -9,7 +9,7 @@ import java.util.List;
 @Mapper
 public interface IChildMapper {
 
-//유아 정보 추가
+//유아 정보 추가//
     int InsertChildInfo(ChdDTO pDTO)throws Exception;
 
 //유아 회원목록 조회
