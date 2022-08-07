@@ -1,11 +1,8 @@
 package kopo.poly.controller;
 
-import kopo.poly.dto.MailDTO;
-import kopo.poly.service.IMailService;
 import kopo.poly.util.CmmUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -34,10 +31,10 @@ public class MailController {
 
         String title = " 반갑습니다.환영합니다"; //제목
         String contents = "( 인증번호: " + randomPin + ")";  //내용
-        log.info("randomPiN: " + randomPin);
+        log.info("randomPiN: "+randomPin);
 
 
-        MailDTO pDTO = new MailDTO(); //메일
+        MailDTO pDTO = new MailDTO(); //
         pDTO.setToMail(user_email); //이메일 주소
         pDTO.setTitle(title);  //제목
         pDTO.setContents(contents);  // 내용

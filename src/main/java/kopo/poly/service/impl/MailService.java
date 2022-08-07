@@ -22,14 +22,14 @@ import javax.mail.Transport;
 public class MailService implements IMailService {
 
 
-    final String host = "";
-    final String user = "";
-    final String password = "";//
+    final String host = "smtp.gmail.com";
+    final String user = "floramiss0700@gmail.com";
+    final String password = "fvfzrvayfawppktv";
     //final int port = 465;
 
 
     @Override
-    public int doSendmail(MailDTO pDTO) {
+    public int doSendmail(MailDTO pDTO)  {
 
 
         int res = 1;
