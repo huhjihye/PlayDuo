@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTO Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kopo.poly.persistance.mapper.IStudyMapper">
+    <select id="getSentenceStudy" resultType="StudyDTO">
+        SELECT *
+        FROM SENTENCE_STUDY
+        ORDER BY RAND() LIMIT 10
+    </select>
+
+    <select id="getWordStudy" parameterType="StudyDTO" resultType="StudyDTO">
+        SELECT *
+        FROM WORD_STUDY
+        ORDER BY RAND() LIMIT 10;
+    </select>
+<!--    -->
+</mapper>
