@@ -27,48 +27,7 @@
 
     <script type="text/javascript">
 
-        // $(function (){
-        //     $('btn_reg').click(function (){
-        //         var valid=$('user_id').val();
-        //         var valpwd=$('user_pwd').val();
-        //         var valemail=$('user_email').val();
-        //         var valname=$('user_name').val();
-        //
-        //
-        //         if(valid ===null || valid ===undefined || valid===""){alert("아이디를 입력해주세요"); $('#user_id').focus(); return;}
-        //         if(valpwd ===null || valpwd ===undefined || valpwd===""){alert("비밀번호를 입력해주세요"); $('#user_pwd').focus(); return;}
-        //         if(valemail ===null || valemail ===undefined || valemail===""){alert("이메일을 입력해주세요"); $('#user_email').focus(); return;}
-        //         if(valname ===null || valname ===undefined || valname===""){alert("이름을 입력해주세요"); $('#user_name').focus(); return;}
-        //         if(!$('.gender').prop('checked')){alert("성별을 체크해주세요"); $('.gender')[0].focus(); return;}
-        //         $('#login').submit();
-        //     });
-        //
-        //
-        // });
 
-
-        //         //아이디 정규식
-        //         let idJ = /^[a-z0-9]{4,12}$/;
-        //         //모든 공백 체크 정규식
-        //         let empJ = /\s/g;
-        //
-        //         $(function all(){
-        //             $("#joinForm").submit(function all(){
-        //             if($("#user_id").val().idJ){
-        //                 alert ("아이디를 다시 임력해주세요. ");
-        //                 $("#user_id").val("").focus();
-        //                 return false;
-        //             }else if($("#user_id").value().empJ){
-        //                 alert ("공백은 입력이 불가능합니다.");
-        //                 return  false;
-        //             }
-        //             })
-        //
-        //             $("")
-        //
-        //         }
-        //
-        //
         /*유효성 검사 정규식 */
         //아이디 정규식
         let idJ = /^[a-z0-9]{4,12}$/;
@@ -135,7 +94,7 @@
         function checkfield() {
             if ($('#user_id').val().trim() === '') {
                 alert("아이디는 공백일 수 없습니다.");
-                $("#id_result").text('아이디는 공백일 수 없습니다');
+                $("#id_result").text.text('아이디는 공백일 수 없습니다');
                 return false;
             }
             if ($('#user_email').val().trim() === '') {
@@ -323,8 +282,8 @@
                             </div>
 
                             <div class="input-group input-group-outline mb-3" id="gender">
-                                <span style="margin:auto;"><input type="radio" name="gender">남자</span>
-                                <span style="margin: auto;"><input type="radio" name="gender">여자</span>
+                                <span style="margin:auto;"><input type="radio" name="gender" value="man">남자</span>
+                                <span style="margin: auto;"><input type="radio" name="gender" value="woman">여자</span>
                                 <div class="text-center"></div>
                             </div>
                             <div id="user_Reg_result"></div>
