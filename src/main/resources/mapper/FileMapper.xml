@@ -12,5 +12,5 @@
             (FILE_SEQ, IMG_ANSWER, IMG_CONTENT)
         VALUES (#{file_seq}, #{img_answer}, #{img_content})
     </insert>
-<!--    -->
+    <!---->
 </mapper>

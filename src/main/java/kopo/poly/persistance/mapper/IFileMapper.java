@@ -8,7 +8,7 @@ import org.apache.ibatis.annotations.Mapper;
 public interface IFileMapper {
     
     /*
-    * @param FileDTO fDTO 파일 정보 확인//
+    * @param FileDTO fDTO 파일 정보 확인////
     * @return insert 된 file_seq
     * */
     int fileUpload(FileDTO fDTO) throws Exception;

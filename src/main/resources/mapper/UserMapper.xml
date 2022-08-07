@@ -34,5 +34,5 @@
         FROM PARENT_INFO
         WHERE PARENT_EMAIL= #{parent_email}
     </select>
-
+<!---->
 </mapper>

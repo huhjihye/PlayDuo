@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Random;
 
 
-@Slf4j //log.info를 사용하기 위해
+@Slf4j //log.info를 사용하기 위해//
 @Controller //controller 라고 보여주는 어노테이션
 public class ChildController {
 

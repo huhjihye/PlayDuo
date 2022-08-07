@@ -7,7 +7,7 @@ import javax.jws.soap.SOAPBinding;
 
 @Mapper
 public interface IUserMapper {
-
+//
     int InsertUserInfo(UserDTO pDTO) throws Exception;
 
     UserDTO user_idcheck(String parent_id) throws Exception;

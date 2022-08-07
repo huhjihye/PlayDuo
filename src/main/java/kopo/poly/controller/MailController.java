@@ -17,7 +17,7 @@ import java.util.Random;
 @Slf4j
 @Controller
 public class MailController {
-
+//
     @Resource(name = "MailService")
     private IMailService mailService;
 

@@ -6,7 +6,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class MailDTO {
-    private String toMail;
+    private String toMail;//
     private String title;
     private String contents;
     private int RandomPin;

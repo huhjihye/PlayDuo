@@ -12,5 +12,5 @@
         FROM WORD_STUDY
         ORDER BY RAND() LIMIT 10;
     </select>
-<!--    -->
+    <!---->
 </mapper>
