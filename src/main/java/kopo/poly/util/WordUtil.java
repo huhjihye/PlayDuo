@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WordUtil {
-    //단어 학습
+    //단어 학습//
     public static List<List<String>> main(String[] args) throws Exception {
         String [] word = {"사과","딸기","배"};
         //String [] word_res = new String[word.length];

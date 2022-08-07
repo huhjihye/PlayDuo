@@ -1,4 +1,4 @@
-
+//
 function write_append() {
     const div_list = document.getElementsByClassName('input-image');
     let count = div_list.length +1;

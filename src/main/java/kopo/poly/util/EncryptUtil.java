@@ -15,7 +15,7 @@ import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 
 import org.apache.commons.codec.binary.Base64;
-// 사용자 비밀번호 및 이메일 암호화 알고리즘
+// 사용자 비밀번호 및 이메일 암호화 알고리즘//
 public class EncryptUtil {
 
 	/*

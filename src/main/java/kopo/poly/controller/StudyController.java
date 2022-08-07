@@ -19,7 +19,7 @@ import java.util.List;
 @Controller
 public class StudyController {
     
-    //학습 컨트롤러
+    //학습 컨트롤러//
     @Resource(name="StudyService")
     private IStudyService studyService;
 

@@ -7,7 +7,7 @@ import lombok.Setter;
 @Setter
 public class StudyDTO {
 
-    // 학습 DTO
+    // 학습 DTO//
     // sentence stduy
     private String sentence_study_seq;
     private String sentence_content;

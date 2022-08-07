@@ -2,7 +2,7 @@ package kopo.poly.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-// 사용자 파일 및 날짜 패스용
+// 사용자 파일 및 날짜 패스용//
 public class DateUtil {
     /**
      * 날짜, 시간 출력하기

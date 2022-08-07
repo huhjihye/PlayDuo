@@ -19,7 +19,7 @@ import java.util.List;
 @Slf4j
 @Service("StudyService")
 public class StudyService implements IStudyService {
-    //싱글톤 객체 생성
+    //싱글톤 객체 생성//
     private final IStudyMapper studyMapper;
 
     @Autowired

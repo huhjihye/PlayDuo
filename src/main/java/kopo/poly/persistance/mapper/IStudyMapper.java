@@ -11,7 +11,7 @@ public interface IStudyMapper {
 
     /*
     * @param 문장학습 시작시 전체조회 
-    * @return 램덤으로 가져온 조회 결과 확인
+    * @return 램덤으로 가져온 조회 결과 확인//
     * */
     List<StudyDTO> getSentenceStudy()throws Exception;
 

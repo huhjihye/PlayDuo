@@ -20,7 +20,7 @@ import java.util.List;
 @Slf4j
 public class UploadController{
 
-    //이미지 업로드
+    //이미지 업로드//
     @Resource(name = "S3UploadService")
     private IS3UploadService s3UploadService;
 
