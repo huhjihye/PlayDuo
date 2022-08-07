@@ -21,6 +21,7 @@ public class MailController {
     @Resource(name = "MailService")
     private IMailService mailService;
 
+    //메일인증 보내기
     @ResponseBody
     @PostMapping(value = "user_sendmail")
     public Map<String, String> user_sendmail(HttpServletRequest request) throws Exception {
@@ -62,18 +63,5 @@ public class MailController {
         return pMap;
     }
 
-//    @PostMapping("/auth_email/ajax")
-//    @ResponseBody
-//    public Map<String, Integer> auth_email(HttpServletRequest request) throws Exception {
-//        log.info(this.getClass().getName()+".auth_email start!");
-//        MailDTO rMap=new rMa
-//        log.info("auth_res: "+auth_res()); //
-//        log.info("sendmail_result: "+sendmail_result());
-//        Map<String, Integer> rmap = new HashMap<>();
-//        rmap.put("auth_res", auth_res);
-//        rmap.put("sendmail", sendmail);
-//
-//
-//        return rmap;
-//    }
+
 }
