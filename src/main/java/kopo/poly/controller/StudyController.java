@@ -23,6 +23,12 @@ public class StudyController {
     @Resource(name="StudyService")
     private IStudyService studyService;
 
+    @GetMapping(value = "studyStep")
+    public String studyStep(){
+        log.info(this.getClass().getName()+"학습 단계 선택 페이지 시작!");
+        return "study/studyStep";
+    }
+
     @PostMapping(value = "study/sentenceStudy")
     public String sentenceStudyProc(HttpServletRequest request, ModelMap model)throws Exception{
         log.info(this.getClass().getName()+"문장학습 시작!");
@@ -39,5 +45,8 @@ public class StudyController {
 
         return "/study/sentenceStudy";
     }
+
+
+
 
 }

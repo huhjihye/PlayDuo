@@ -24,14 +24,18 @@ public class ChildController {
     @Resource(name = "ChildService") // 주입할 서비스나 매퍼 적기 name="서비스 이름"
     private IChildService childService;
 
-
-
     //유아 추가 페이지를 보여줌
     @GetMapping(value = "chdAdd")
     public String chdAdd() {
         log.info(this.getClass().getName() + "유아 추가 페이지 시작!");
 
-        return "user/chdAdd";
+        return "child/chdAdd";
+    }
+
+    @GetMapping(value = "chdInfo") //유아 정보 확인 페이지 시작!
+    public String chdInfo(){
+        log.info(this.getClass().getName()+"유아 정보 페이지 시작!");
+        return "child/chdInfo";
     }
 
     //유아 추가 로직 실행
@@ -73,7 +77,7 @@ public class ChildController {
     }
 
     //유아 회원목록 페이지
-    @GetMapping(value = "chdMember")
+    @GetMapping(value = "chdList")
     public String chdMemberList( HttpServletRequest request, Model model) throws Exception {
         log.info(this.getClass().getName()+"유아 회원목록 페이지 시작");
 
@@ -87,7 +91,7 @@ public class ChildController {
 
         log.info(this.getClass().getName()+"유아 회원목록 페이지 끝!");
 
-        return "user/chdMember";
+        return "child/chdList";
     }
 
 

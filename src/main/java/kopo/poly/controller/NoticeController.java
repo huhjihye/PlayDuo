@@ -25,11 +25,39 @@ public class NoticeController {
     @Resource(name = "NoticeService") // 주입할 서비스나 매퍼 적기 name="서비스 이름"
     private INoticeService noticeService;
 
+    @GetMapping(value = "noticeMain")
+    public String noticeMain(){
+        log.info(this.getClass().getName()+"게시판 메인 페이지 시작!");
+        return "notice/noticeMain";
+    }
+
     //고객센터 페이지 표시
-    @GetMapping(value = "mainNotice") // value 값에 url에서 보내온 어떤 요청인지 명시
+    @GetMapping(value = "noticeWrite") // value 값에 url에서 보내온 어떤 요청인지 명시
     public String mainNotice() {
+<<<<<<< HEAD
         log.info(this.getClass().getName() + ".고객센터 페이지 시작!!"); // 실행했는지 로그 찍어보기
         return "notice/mainNotice"; // JSP index 파일을 보여준다. (되돌려준다)
+=======
+        log.info(this.getClass().getName() + "1대1 게시글 작성 시작!!"); // 실행했는지 로그 찍어보기
+        return "notice/noticeWrite"; // JSP index 파일을 보여준다. (되돌려준다)
+    }
+
+    @GetMapping(value = "noticeChg") //게시글 수정 페이지
+    public String noticeChg(){
+        log.info(this.getClass().getName()+"게시글 수정 시작!");
+        return "notice/noticeChg";
+    }
+
+    @GetMapping(value = "noticeList") //게시글 리스트 페이지
+    public String noticeList(){
+        log.info(this.getClass().getName()+"게시글 리스트 페이지 시작!");
+        return "notice/noticeList";
+    }
+    @GetMapping(value ="userQuestion") //자주 묻는 질문 페이지
+    public String userQuestion(){
+        log.info(this.getClass().getName()+"자주 묻는 질문 페이지 시작!");
+        return "notice/userQuestion";
+>>>>>>> 1e39a667dbc5c558893ff75c7af2a2d372ad59b2
     }
 
 @PostMapping(value = "notice")

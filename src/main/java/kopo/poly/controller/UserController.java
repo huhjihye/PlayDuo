@@ -41,12 +41,6 @@ public class UserController {
         log.info(this.getClass().getName() + ".로그인 페이지 시작");
         return "user/login";
     }
-    //메인페이지를 보여줌
-    @GetMapping(value = "main")
-    public String main() {
-        log.info(this.getClass().getName() + "메인페이지 시작 ");
-        return "user/main";
-    }
 
     //마이페이지를 보여줌
     @GetMapping(value="myPage")
