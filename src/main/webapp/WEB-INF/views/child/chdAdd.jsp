@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sing Up</title>
+    <title>유아 정보</title>
     <style>
         @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
@@ -19,12 +19,13 @@
             z-index: 1;
             background: #FFFFFF;
             width: 600px;
-            height: 650px;
+            height: 390px;
             padding: 40px;
             text-align: left;
             box-shadow: 0 0 20px 0 rgb(0 0 0 / 20%), 0 5px 5px 0 rgb(0 0 0 / 24%);
             margin-left: -50%;
             padding-top: 30%;
+            margin-top: 20%;
 
 
         }
@@ -32,7 +33,6 @@
             font-family: "Roboto", sans-serif;
             outline: 0;
             background: #f2f2f2;
-
             border: 0;
             margin: 0 0 15px;
             padding: 15px;
@@ -104,7 +104,7 @@
         }
 
         body {
-            background-color:  #FFE46F;
+            background-color:  #ffe46f;
             font-family: "Roboto", sans-serif;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
@@ -123,15 +123,15 @@
             #f1c40f 80%, #f1c40f 100%
             );
 
-            height: 20px;
+            height: 15px;
             border-radius: 5px 5px 0 0;
         }
         .login_png{
-            padding-left: 150px;
+            padding-left: 155px;
             margin-top: -40px;
         }
         button{
-            margin-left: 35px;
+            margin-left: 8%;
         }
 
     </style>
@@ -141,34 +141,21 @@
 
     <div class="form">
         <div class = "login_png"><img src = "/assets/images/p_login.png" width="280px"></div>
+
         <br>
         <br>
         <br>
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="유아 이름을 입력하세요"/ size="15px" style="width:500px";><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="age" min="1" max="8" placeholder="유아 나이를 입력하세요"/ size="15px" style="width:500px";>
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="male" value="남자" />남&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="femail" value="여자"/> 여
+        <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;아이 프로필 이미지&nbsp;&nbsp;<input type = "file" name="profile">
         <br>
         <br>
-        <form class="login-form">
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;아이디&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="아이디를 입력하세요"/ size="15px" style="width:300px";>
-            <button style="width:135px";>아이디 중복확인</button>
-            <br>
-            <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이메일&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="이메일을 입력하세요"/ size="15px" style="width:300px";>
-            <button style="width:135px";>이메일 중복확인</button>
-            <br>
-            <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;인증번호&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="인증번호를 입력하세요"/ size="15px" style="width:300px";>
-            <button style="width:135px";>인증 번호 발송</button><br> <br>
 
+        <a href="main.html"><div class = "button4"> <button style="width:505px">유아 정보 입력</button></div></a>
 
-
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;비밀번호&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" placeholder="비밀번호를 입력하세요"/ size="15px" style="width:300px";><br>
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;비밀번호 확인&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" placeholder="비밀번호를 입력하세요"/ size="15px" style="width:260px";><br>
-            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="male" value="남자" />남&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="femail" value="여자" checked="checked" /> 여
-
-            <br>
-            <br>
-            <br>
-            <a href="/kidsinfo.html"><button type="button" style="width:535px">회원가입</button></a>
-
-
+        <!-- <p class="message">Not registered? <a href="#">Create an account</a></p> -->
         </form>
     </div>
 </div>
