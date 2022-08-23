@@ -57,7 +57,7 @@
                   <button type="submit" class="btn bg-gradient-primary w-100 my-4 mb-2"  style="background-image:  linear-gradient(195deg, #49a3f1 0%, #49a3f1 100%); box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px rgb(245 236 239 / 40%) !important;">학습 결과 확인</button>
                 </div>
                 <div class="text-center">
-                  <button type="button" onclick="location.href='/mainNotice'" class="btn bg-gradient-primary w-100 my-4 mb-2"  style="background-image:  linear-gradient(195deg, #49a3f1 0%, #49a3f1 100%); box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px rgb(245 236 239 / 40%) !important;">고객센터</button>
+                  <button type="button" onclick="location.href='notice/mainNotice'" class="btn bg-gradient-primary w-100 my-4 mb-2"  style="background-image:  linear-gradient(195deg, #49a3f1 0%, #49a3f1 100%); box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px rgb(245 236 239 / 40%) !important;">고객센터</button>
                 </div>
                 <div class="text-center">
                   <button type="submit" class="btn bg-gradient-primary w-100 my-4 mb-2"  style="background-image:  linear-gradient(195deg, #49a3f1 0%, #49a3f1 100%); box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px rgb(245 236 239 / 40%) !important;">로그아웃</button>

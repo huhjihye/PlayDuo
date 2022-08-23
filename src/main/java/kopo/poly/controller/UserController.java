@@ -141,7 +141,7 @@ public class UserController {
 
 
     @PostMapping(value = "userRegProc")
-    public String userReg(HttpServletRequest request) throws Exception {
+    public String userRegProc(HttpServletRequest request) throws Exception {
         log.info(this.getClass().getName() + ".userReg start!!");
 
         String parent_id = CmmUtil.nvl(request.getParameter("parent_id"));
@@ -163,7 +163,7 @@ public class UserController {
         pDTO.setParent_name(parent_name);
         pDTO.setParent_gender(parent_gender);
 
-        int res = userService.InsertUserInfo(pDTO);
+        int res = userService.userRegProc(pDTO);
 
 
         if (res > 0) {

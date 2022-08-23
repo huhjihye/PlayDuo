@@ -40,8 +40,8 @@
 
         /*아이디 유효성검사*/
         $(document).ready(function () {
-            $('#user_id').blur(function () {
-                if (idJ.test($('#user_id').val())) {
+            $('#parent_id').blur(function () {
+                if (idJ.test($('#parent_id').val())) {
                     console.log('true');
                     $("#id_result").text('중복확인을 눌러주세요.');
                     $("#id_result").css('color', 'blue');
@@ -52,8 +52,8 @@
                 }
             });
             /*이메일 유효성검사*/
-            $('#user_email').blur(function () {
-                if (emailJ.test($('#user_email').val())) {
+            $('#parent_email').blur(function () {
+                if (emailJ.test($('#parent_email').val())) {
                     console.log('true');
                     $('#email_check').text('사용가능한 이메일입니다.');
                     $('#email_check').css('color', 'blue');
@@ -64,8 +64,8 @@
                 }
             });
             /*비밀번호 유효성검사*/
-            $('#user_pwd').blur(function () {
-                if (pwJ.test($('#user_pwd').val())) {
+            $('#parent_password').blur(function () {
+                if (pwJ.test($('#parent_password').val())) {
                     console.log('true');
                     $('#password_check').text('사용가능한 비밀번호입니다.');
                     $('#password_check').css('color', 'blue');
@@ -77,8 +77,8 @@
                 }
             });
             /*이름 유효성검사*/
-            $('#user_name').blur(function () {
-                if (nameJ.test($('#user_name').val())) {
+            $('#parent_name').blur(function () {
+                if (nameJ.test($('#parent_name').val())) {
                     console.log('true');
                     $('#name_check').text('사용가능한 이름입니다.');
                     $('#name_check').css('color', 'blue');
@@ -94,23 +94,23 @@
         function checkfield() {
             if ($('#user_id').val().trim() === '') {
                 alert("아이디는 공백일 수 없습니다.");
-                $("#id_result").text.text('아이디는 공백일 수 없습니다');
+                $("#parent_id").text.text('아이디는 공백일 수 없습니다');
                 return false;
             }
-            if ($('#user_email').val().trim() === '') {
+            if ($('#parent_email').val().trim() === '') {
                 $('#email_check').text('이메일은 공백일 수 없습니다');
                 return false;
             }
 
-            if ($('#user_pwd').val().trim() === '') {
+            if ($('#parent_password').val().trim() === '') {
                 $('#password_check').text('비밀번호는 공백일 수 없습니다');
                 return false;
             }
-            if ($('#user_name').val().trim() === '') {
+            if ($('#parent_name').val().trim() === '') {
                 $('#name_check').text('이름는 공백일 수 없습니다');
                 return false;
             }
-            if ($('[name="gender"]:checked').length == 0) {
+            if ($('[name="parent_gender"]:checked').length == 0) {
                 alert("성별은 공백일 수 없습니다.");
                 //$('#name_check').text('이름는 공백일 수 없습니다');
                 return false;
@@ -129,15 +129,15 @@
 
         /**/
         function id_check() {
-            let user_id = document.getElementById("user_id").value; //자바스크립트
-            console.log("user_id", user_id);
-            let user_id2 = $("#user_id").val(); //제이쿼리
-            console.log("user_id2", user_id2);
+            let user_id = document.getElementById("parent_id").value; //자바스크립트
+            console.log("parent_id", parent_id);
+            let user_id2 = $("#parent_id").val(); //제이쿼리
+            console.log("parent_id2", parent_id2);
 
             $.ajax({
                 url: "/user_idcheck", //어디로 통신할지
                 type: "post",
-                data: $("#user_id"),
+                data: $("#parent_id"),
                 success(data) {
                     console.log("data", data);
                     if (data == 1) { //1은 존재하는거니까 중복확인이니까 -> 1이면 데이터 받았다고 성공이 아니라서 컬러를 red로 준거임
@@ -157,7 +157,7 @@
             $.ajax({
                 url: "/user_emailcheck",
                 type: "post",
-                data: $('#user_email'),
+                data: $('#parent_email'),
                 success(data) {
                     console.log("data", data);
                     if (data == 1) {
@@ -177,7 +177,7 @@
             $.ajax({
                 url: "/user_sendmail",
                 type: "post",
-                data: $("#user_email"),
+                data: $("#parent_email"),
                 /*dataType이란 내가 반환받을 데이터의 형태를 명시해주는 것*/
                 dataType: 'json',
                 success(pMap) {
@@ -230,9 +230,9 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <form class="text-start" action="/userRegProc" method="post" id="userReg">
+                        <form class="text-start" action="/userRegProc" method="post" id="userRegProc">
                             <div class="input-group input-group-outline my-3">
-                                <input type="text" class="form-control" placeholder="아이디" name="user_id" id="user_id">
+                                <input type="text" class="form-control" placeholder="아이디" name="parent_id" id="parent_id">
                                 <div class="check_font" id="id_check"></div>  <!-- id 유효성 검사 체크 경고문 -->
                             </div>
                             <div id="id_result"></div>
@@ -245,7 +245,7 @@
 
 
                             <div class="input-group input-group-outline mb-3">
-                                <input type="email" class="form-control" id="user_email" name="user_email"
+                                <input type="email" class="form-control" id="parent_email" name="parent_email"
                                        placeholder="이메일">
                                 <div class="check_font" id="email_check"></div>  <!-- 이메일 유효성 검사 체크 경고문 -->
                             </div>
@@ -270,20 +270,21 @@
                             <div id="auth_res" name="auth_res"></div> <!--인증번호 입력-->
 
                             <div class="input-group input-group-outline mb-3">
-                                <input type="password" class="form-control" id="user_pwd" name="user_pwd"
+                                <input type="password" class="form-control" id="parent_password" name="parent_password"
                                        placeholder="비밀번호">
                                 <div class="check_font" id="password_check"></div>  <!-- 비밀번호 유효성 검사 체크 경고문 -->
+
                             </div>
 
                             <div class="input-group input-group-outline mb-3">
-                                <input type="text" class="form-control" id="user_name" name="user_name"
+                                <input type="text" class="form-control" id="parent_name" name="parent_name"
                                        placeholder="이름">
                                 <div class="check_font" id="name_check"></div>  <!-- 이름 유효성 검사 체크 경고문 -->
                             </div>
 
                             <div class="input-group input-group-outline mb-3" id="gender">
-                                <span style="margin:auto;"><input type="radio" name="gender" value="man">남자</span>
-                                <span style="margin: auto;"><input type="radio" name="gender" value="woman">여자</span>
+                                <span style="margin:auto;"><input type="radio" name="parent_gender" value="man">남자</span>
+                                <span style="margin: auto;"><input type="radio" name="parent_gender" value="woman">여자</span>
                                 <div class="text-center"></div>
                             </div>
                             <div id="user_Reg_result"></div>

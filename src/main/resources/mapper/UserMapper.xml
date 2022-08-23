@@ -3,7 +3,7 @@
 <mapper namespace="kopo.poly.persistance.mapper.IUserMapper">
 
 <!-- 회원가입 DB에 정보 저장-->
-        <insert id="InsertUserInfo" parameterType="UserDTO">
+        <insert id="userRegProc" parameterType="UserDTO">
         INSERT INTO PARENT_INFO
         (PARENT_ID,
         PARENT_EMAIL,
@@ -18,12 +18,12 @@
 
     </insert>
 
-
-    <select id="selectUserInfo" parameterType="UserDTO" resultType="UserDTO">
-        SELECT PARENT_ID
+<!--로그인-->
+    <select id="loginProc" parameterType="UserDTO" resultType="UserDTO">
+        SELECT PARENT_ID, PARENT_PASSWORD
         FROM PARENT_INFO
         WHERE PARENT_ID = #{parent_id}
-        and PARENT_PASSWORD = #{parent_password}
+        AND PARENT_PASSWORD = #{parent_password}
     </select>
 
 
@@ -35,4 +35,12 @@
         WHERE PARENT_EMAIL= #{parent_email}
     </select>
 <!---->
+
+    <!--비밀번호 변경로직-->
+    <update id="passwordChangeProc">
+UPDATE PARENT_INFO
+SET PARENT_PASSWORD=#{parent_password}
+WHERE PARENT_ID=#{parent_id}
+    </update>
+
 </mapper>

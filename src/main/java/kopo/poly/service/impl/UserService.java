@@ -20,10 +20,10 @@ public class UserService implements IUserService {
 
 
     @Override
-    public int InsertUserInfo(UserDTO pDTO) throws Exception {
-        log.info(this.getClass().getName() +"InsertUserInfo start !!");
-        int res = userMapper.InsertUserInfo(pDTO);
-        log.info(this.getClass().getName()+ "InsertUserInfo END!!");
+    public int userRegProc(UserDTO pDTO) throws Exception {
+        log.info(this.getClass().getName() +"userRegProc start !!");
+        int res = userMapper.userRegProc(pDTO);
+        log.info(this.getClass().getName()+ "userRegProc END!!");
         return res;
     }
 
@@ -32,7 +32,7 @@ public class UserService implements IUserService {
     public int loginProc(UserDTO rDTO) throws Exception {
         log.info(this.getClass().getName()+"selectUserInfo start!!");
 
-        int res=0; //교수님 코드 따라한거. 전역으로 빼서 초기화 시켜주고 해야 return값을 줄 수 있다.
+        int res=0; //교수님 코드 따라한거. 전역으로 빼서 초기selectUserInfo화 시켜주고 해야 return값을 줄 수 있다.
 
         if(rDTO==null){
             rDTO=new UserDTO();  //SELECT를 했는데 조회결과가 없을 수도 있으니까  , 다시 메모리에 올려라 . 메모리에 강제로 다시 올려줌

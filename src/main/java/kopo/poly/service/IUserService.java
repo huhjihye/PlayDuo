@@ -5,7 +5,7 @@ import kopo.poly.dto.UserDTO;
 public interface IUserService {
 
 
-    int InsertUserInfo(UserDTO pDTO) throws Exception;
+    int userRegProc(UserDTO pDTO) throws Exception;
 
 
     int user_idcheck(String parent_id)throws Exception;

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="apple-touch-icon" sizes="76x76" href="">
     <link rel="icon" type="image/png" href="/assets/img/favicon.png">
-    <title>로그인</title>
+    <title>1:1문의</title>
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700"/>
@@ -37,30 +37,18 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <form role="form" class="text-start" action="/loginProc" method="post">
+                        <form role="form" class="text-start" action="/notice" method="post">
                             <div class="input-group input-group-outline my-3">
-                                <label class="form-label">아이디</label>
-                                <input type="text" class="form-control" name="parent_id">
-                            </div>
-                            <div class="input-group input-group-outline mb-3">
-                                <label class="form-label">비밀번호</label>
-                                <input type="password" class="form-control" name="parent_password">
-                            </div>
-                            <div class="form-check form-switch d-flex align-items-center mb-3">
-                                <input class="form-check-input" type="checkbox" id="rememberMe">
-                                <label class="form-check-label mb-0 ms-2" for="rememberMe">아이디 기억하기</label>
+                                <label class="form-label">1:1 게시판</label>
+                                <input type="text" class="form-control" name="notice">
                             </div>
                             <div class="text-center">
                                 <button type="submit" class="btn bg-gradient-primary w-100 my-4 mb-2"
                                         style="background-image:  linear-gradient(195deg, #49a3f1 0%, #49a3f1 100%); box-shadow: 0 4px 20px 0 rgb(0 0 0 / 14%), 0 7px 10px -5px rgb(245 236 239 / 40%) !important;">
-                                    시작하기
+                                    제출하기
                                 </button>
                             </div>
-                            <p class="mt-4 text-sm text-center">
-                                <a href="/user/findID" class="text-primary text-gradient font-weight-bold">아이디찾기</a>
-                                <a href="/user/findPwd" class="text-primary text-gradient font-weight-bold">비밀번호 찾기</a>
-                                <a href="/user/userReg" class="text-primary text-gradient font-weight-bold">회원가입</a>
-                            </p>
+
                         </form>
                     </div>
                 </div>

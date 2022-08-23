@@ -8,7 +8,7 @@ import javax.jws.soap.SOAPBinding;
 @Mapper
 public interface IUserMapper {
 //
-    int InsertUserInfo(UserDTO pDTO) throws Exception;
+    int userRegProc(UserDTO pDTO) throws Exception;
 
     UserDTO user_idcheck(String parent_id) throws Exception;
 
@@ -19,5 +19,7 @@ public interface IUserMapper {
 
     //비밀번호 변경 로직 실행
     int passwordChangeProc(UserDTO pDTO)throws Exception;
+
+
 
 }
